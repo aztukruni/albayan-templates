@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a1229">
+<meta name="apple-mobile-web-app-title" content="قوالب البيان">
+<title>قوالب نادي البيان للتوستماسترز</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070d1f;--panel:#0e1730;--line:rgba(255,255,255,.08);--gold:#d9b25a;--text:#e9ecf5;--muted:#8e98b3}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--text);font-family:"IBM Plex Sans Arabic",Tahoma,sans-serif;
+  background:radial-gradient(900px 500px at 80% -10%,#1a2856 0,transparent 60%),radial-gradient(700px 500px at 0% 110%,#152044 0,transparent 60%),var(--bg)}
+.wrap{max-width:1000px;margin:0 auto;padding:max(28px,env(safe-area-inset-top)) 18px 40px}
+header{text-align:center;margin:10px 0 28px}
+.kicker{color:var(--gold);font-size:14px;font-weight:600;letter-spacing:.3px}
+h1{font-family:Cairo,sans-serif;font-weight:900;font-size:clamp(28px,6vw,40px);margin:6px 0 6px;
+  background:linear-gradient(180deg,#fff1c4,#e2b85a 60%,#b8862f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--muted);font-size:15px;line-height:1.8}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+a.card{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:var(--panel);border:1px solid rgba(226,190,110,.22);
+  border-radius:20px;overflow:hidden;transition:transform .15s,border-color .15s}
+a.card:hover,a.card:active{transform:translateY(-2px);border-color:rgba(226,190,110,.6)}
+a.card img{display:block;width:100%;aspect-ratio:1;object-fit:cover;background:#0a1229}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:4px}
+.body h2{margin:0;font-family:Cairo,sans-serif;font-weight:800;font-size:20px}
+.body p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}
+.go{margin-top:10px;align-self:flex-start;background:linear-gradient(180deg,#f1d68b,#c9993f);color:#0b1430;font-weight:600;font-size:14px;padding:8px 16px;border-radius:999px}
+.tip{margin-top:26px;background:rgba(217,178,90,.08);border:1px solid rgba(226,190,110,.25);border-radius:16px;padding:14px 16px;font-size:14px;line-height:1.9;color:#d8dcea}
+.tip b{color:var(--gold)}
+footer{text-align:center;margin-top:26px;font-family:Cairo,sans-serif;font-weight:700;color:var(--gold)}
+@media (max-width:760px){
+  .grid{grid-template-columns:1fr}
+  a.card{flex-direction:row;align-items:center}
+  a.card img{width:118px;flex:none;border-left:1px solid var(--line)}
+  .go{display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">نادي البيان للتوستماسترز</div>
+    <h1>قوالب النادي</h1>
+    <div class="sub">اختر القالب، أضف الصور، واحفظ التصميم مباشرة من جوالك.</div>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="thanks.html">
+      <img src="thumb-thanks.jpg" alt="قالب شكراً">
+      <div class="body"><h2>شكراً لحضوركم</h2><p>بعد كل لقاء: أضف الصورة الجماعية.</p><span class="go">افتح القالب</span></div>
+    </a>
+    <a class="card" href="winners.html">
+      <img src="thumb-winners.jpg" alt="قالب الفائزين">
+      <div class="body"><h2>الفائزون</h2><p>صور أفضل خطبة معدّة وارتجالية وأفضل مقوّم.</p><span class="go">افتح القالب</span></div>
+    </a>
+    <a class="card" href="next-meeting.html">
+      <img src="thumb-next.jpg" alt="قالب الاجتماع القادم">
+      <div class="body"><h2>الاجتماع القادم</h2><p>إعلان بالموضوع والتاريخ والوقت والمكان.</p><span class="go">افتح القالب</span></div>
+    </a>
+  </div>
+
+  <div class="tip">
+    <b>نصيحة:</b> احفظ هذه الصفحة على الشاشة الرئيسية في جوالك ليسهل الوصول لها.
+    في الآيفون: زر المشاركة ثم «إضافة إلى الشاشة الرئيسية». وفي الأندرويد: القائمة ⋮ ثم «إضافة إلى الشاشة الرئيسية».
+  </div>
+
+  <footer>ارتقِ بكلماتك... كن بيانًا</footer>
+</div>
+</body>
+</html>
